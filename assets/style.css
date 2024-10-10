@@ -1,0 +1,1981 @@
+/* Styling for body */
+body {
+    background: #0F090D;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for navigation bar */
+nav {
+    position: absolute;
+    width: 100%;
+    height: 7.18vw;
+    left: 0vw;
+    top: 2.08vw;
+    z-index: 9;
+
+    #nav-line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: 7.18vw;
+        border: 1px solid;
+        border-image-source: linear-gradient(90deg, #FFFFFF 0%, #414141 100%);
+    }
+
+    #logo-text {
+        position: absolute;
+        width: 9.65vw;
+        height: 2.43vw;
+        left: 6.94vw;
+        top: 1.49vw;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2.22vw;
+        line-height: 110.6%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    #menu-toggler {
+        display: none;
+    }
+
+    #nav-item {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.43vw;
+        width: 50.73vw;
+        height: 5.42vw;
+        top: 0vw;
+        left: 42.34vw;
+        margin: 0;
+        padding: 0;
+
+        li {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.25vw;
+            line-height: 110.6%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #E7E7E7;
+            cursor: pointer;
+
+            #dropdown {
+                box-sizing: border-box;
+                width: 0.52vw;
+                height: 0.27vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 431px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        gap: 3.95vw;
+        height: 19.53vw;
+        left: 0vw;
+        top: 0vw;
+        background: rgba(17, 17, 17, 0.16);
+        box-shadow: 0vw 1.86vw 2.72vw rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur(6.3px);
+
+        #nav-line {
+            top: 19.53vw;
+            border: 0.62px solid;
+            border-image-source: linear-gradient(90deg, #FFFFFF 0%, #414141 100%);
+        }
+
+        #logo-text {
+            width: 30.47vw;
+            height: 7.67vw;
+            font-size: 6.98vw;
+            top: 7.91vw;
+        }
+
+        #menu-toggler {
+            display: block;
+            position: absolute;
+            top: 9.3vw;
+            right: 6.86vw;
+            width: 5.23vw;
+            height: 4.88vw;
+            cursor: pointer;
+        }
+
+        #nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            left: 0;
+            height: 0vw;
+            top: 19.53vw;
+            width: 100%;
+            background-color: #350443;
+            z-index: 1;
+            transition: height 0.5s ease;
+
+            li {
+                font-weight: 400;
+                font-size: 0vw;
+                padding-left: 8vw;
+                transition: font-size 0.5s ease;
+            }
+        }
+
+        #nav-item.active {
+            height: 36vw;
+
+            li {
+                font-size: 3.49vw;
+
+                #dropdown {
+                    margin-left: 1vw;
+                    box-sizing: border-box;
+                    width: 2.52vw;
+                    height: 1.27vw;
+                }
+            }
+        }
+
+    }
+}
+
+/* Styling of decoration components */
+#ellipse1 {
+    position: absolute;
+    width: 4.26vw;
+    height: 4.26vw;
+    left: 28.08vw;
+    top: 11.23vw;
+}
+
+#ellipse2 {
+    position: absolute;
+    width: 2.88vw;
+    height: 2.88vw;
+    left: 3.58vw;
+    top: 18.87vw;
+}
+
+#ellipse3 {
+    position: absolute;
+    width: 3.97vw;
+    height: 3.97vw;
+    left: 47.88vw;
+    top: 23.24vw;
+}
+
+#ellipse4 {
+    position: absolute;
+    width: 3.97vw;
+    height: 3.97vw;
+    left: 38.32vw;
+    top: 51.04vw;
+}
+
+#ellipse5 {
+    position: absolute;
+    width: 7.50vw;
+    height: 7.50vw;
+    left: 49.55vw;
+    top: 57.81vw;
+}
+
+@media screen and (max-width: 431px) {
+    #ellipse1 {
+        width: 5.38vw;
+        height: 5.38vw;
+        left: 24.51vw;
+        top: 21.40vw;
+    }
+
+    #ellipse2 {
+        width: 3.64vw;
+        height: 3.64vw;
+        left: 9.23vw;
+        top: 101.86vw;
+    }
+
+    #ellipse3 {
+        width: 5.01vw;
+        height: 5.01vw;
+        left: 85.77vw;
+        top: 42.56vw;
+    }
+
+    #ellipse4 {
+        width: 5.01vw;
+        height: 5.01vw;
+        left: 6.47vw;
+        top: 52.33vw;
+    }
+
+    #ellipse5 {
+        width: 7.44vw;
+        height: 7.44vw;
+        left: 85.16vw;
+        top: 114.79vw;
+    }
+}
+
+#shade1 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -2;
+    width: 68.75vw;
+    height: 108.54vw;
+    mix-blend-mode: plus-lighter;
+}
+
+#shade2 {
+    position: absolute;
+    width: 67.43vw;
+    height: 126.53vw;
+    left: 0vw;
+    top: 6.11vw;
+    z-index: -2;
+    mix-blend-mode: plus-lighter;
+}
+
+#shade3 {
+    position: absolute;
+    width: 78.82vw;
+    height: 173.06vw;
+    left: 0vw;
+    top: 43.96vw;
+    z-index: -2;
+    mix-blend-mode: plus-lighter;
+}
+
+#shade4 {
+    position: absolute;
+    width: 68.61vw;
+    height: 156.74vw;
+    right: 0vw;
+    top: 15.88vw;
+    z-index: -2;
+    mix-blend-mode: plus-lighter;
+}
+
+#shade5 {
+    position: absolute;
+    width: 80.49vw;
+    height: 156.81vw;
+    right: 0vw;
+    top: 118.06vw;
+    mix-blend-mode: plus-lighter;
+    z-index: -2;
+}
+
+#shade6 {
+    position: absolute;
+    width: 78.06vw;
+    height: 173.06vw;
+    left: 0vw;
+    top: 170vw;
+    mix-blend-mode: plus-lighter;
+    z-index: -2;
+}
+
+#shade7 {
+    position: absolute;
+    width: 69.38vw;
+    height: 156.74vw;
+    right: 0vw;
+    top: 140vw;
+    mix-blend-mode: plus-lighter;
+    z-index: -2;
+}
+
+#shade8 {
+    position: absolute;
+    width: 77.92vw;
+    height: 113.33vw;
+    left: 0px;
+    top: 232.78vw;
+    mix-blend-mode: plus-lighter;
+    z-index: -2;
+}
+
+#shade9 {
+    position: absolute;
+    width: 69.38vw;
+    height: 138.89vw;
+    right: 0px;
+    top: 207vw;
+    mix-blend-mode: plus-lighter;
+    z-index: -2;
+}
+
+@media screen and (max-width: 431px) {
+    #shade1 {
+        content: url(images/shades/shade1-mob.png);
+        width: 100%;
+        height: 188.14vw;
+    }
+
+    #shade2 {
+        content: url(images/shades/shade2-mob.png);
+        width: 89.07vw;
+        height: 192.56vw;
+        top: 220.97vw;
+        z-index: 1;
+    }
+
+    #shade3 {
+        content: url(images/shades/shade3-mob.png);
+        width: 89.07vw;
+        height: 192.56vw;
+        top: 466.85vw;
+        opacity: 1;
+    }
+
+    #shade4 {
+        content: url(images/shades/shade4-mob.png);
+        width: 73.09vw;
+        height: 193.74vw;
+        top: 122.23vw;
+    }
+
+    #shade5 {
+        content: url(images/shades/shade5-mob.png);
+        width: 100%;
+        height: 259.30vw;
+        top: 280.88vw;
+        z-index: 1;
+    }
+
+    #shade6 {
+        content: url(images/shades/shade6-mob.png);
+        width: 88.37vw;
+        height: 192.56vw;
+        top: 600.64vw;
+    }
+
+    #shade7 {
+        content: url(images/shades/shade7-mob.png);
+        width: 100vw;
+        height: 259.30vw;
+        top: 420.42vw;
+    }
+
+    #shade8 {
+        display: none;
+    }
+
+    #shade9 {
+        content: url(images/shades/shade9-mob.png);
+        width: 100vw;
+        height: 238.37vw;
+        top: 622.55vw;
+    }
+}
+
+#hexagon1 {
+    position: absolute;
+    width: 99.02vw;
+    height: 73.83vw;
+    left: calc(50% - 49.51vw);
+    top: 73.13vw;
+    mix-blend-mode: color-dodge;
+    filter: blur(0.35vw);
+    z-index: -3;
+}
+
+#hexagon2 {
+    position: absolute;
+    width: 99.02vw;
+    height: 73.83vw;
+    left: calc(50% - 49.51vw);
+    top: 145vw;
+    mix-blend-mode: color-dodge;
+    filter: blur(0.35vw);
+    z-index: -3;
+}
+
+#hexagon3 {
+    position: absolute;
+    width: 99.02vw;
+    height: 73.83vw;
+    left: calc(50% - 49.51vw);
+    top: 197.92vw;
+    mix-blend-mode: color-dodge;
+    filter: blur(0.35vw);
+    z-index: -3;
+}
+
+#hexagon4 {
+    position: absolute;
+    width: 99.02vw;
+    height: 53.69vw;
+    height: 53.69vw;
+    left: calc(50% - 49.51vw);
+    top: 262.64vw;
+    mix-blend-mode: color-dodge;
+    filter: blur(0.35vw);
+    z-index: -3;
+}
+
+#hexagon5 {
+    display: none;
+}
+
+@media screen and (max-width: 431px) {
+    #hexagon1 {
+        content: url(images/hexagons/hexagon1-mob.png);
+        width: 100%;
+        height: 93.46vw;
+        left: 0;
+        top: 189.47vw;
+        mix-blend-mode: color-dodge;
+        filter: blur(0.43vw);
+    }
+
+    #hexagon2 {
+        content: url(images/hexagons/hexagon2-mob.png);
+        width: 100%;
+        position: absolute;
+        height: 152.79vw;
+        left: 0;
+        top: 293.02vw;
+        mix-blend-mode: color-dodge;
+        filter: blur(0.21vw);
+    }
+
+    #hexagon3 {
+        content: url(images/hexagons/hexagon3-mob.png);
+        width: 100%;
+        height: 152.79vw;
+        left: 0;
+        top: 465.12vw;
+        mix-blend-mode: color-dodge;
+        filter: blur(0.21vw);
+    }
+
+    #hexagon4 {
+        content: url(images/hexagons/hexagon4-mob.png);
+        width: 100%;
+        height: 152.79vw;
+        left: 0;
+        top: 567.91vw;
+        mix-blend-mode: color-dodge;
+        filter: blur(0.21vw);
+    }
+
+    #hexagon5 {
+        content: url(images/hexagons/hexagon5-mob.png);
+        width: 100%;
+        height: 152.79vw;
+        left: 0;
+        top: 676.28vw;
+        position: absolute;
+        display: block;
+        mix-blend-mode: color-dodge;
+        filter: blur(0.21vw);
+    }
+}
+
+/* Styling for main banner */
+#main-banner {
+    position: absolute;
+    width: 100%;
+    height: 71.67vw;
+    top: 0;
+    left: 0;
+}
+
+#banner-title {
+    position: absolute;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 42.36vw;
+    height: 22.50vw;
+    left: 6.94vw;
+    top: 22.60vw;
+    font-size: 6.39vw;
+    line-height: 7.50vw;
+}
+
+#sub-title {
+    position: absolute;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    width: 32.08vw;
+    height: 1.67vw;
+    left: 6.94vw;
+    top: 46.27vw;
+    font-size: 2.22vw;
+    line-height: 7.50vw;
+}
+
+#lets-play {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.39vw 5.28vw;
+    gap: 0.07vw;
+    position: relative;
+    width: 17.50vw;
+    height: 4.94vw;
+    left: 6.94vw;
+    top: 50.14vw;
+    backdrop-filter: blur(0.91vw);
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    border-radius: 0vw 1.94vw;
+    font-size: 1.39vw;
+    line-height: 7.50vw;
+    cursor: pointer;
+    background: linear-gradient(#350443 0 0) padding-box, linear-gradient(116.02deg, #D90AFF 31.67%, rgba(217, 10, 255, 0.08) 100%) border-box;
+    border: 0.1vw solid transparent;
+}
+
+#gaming-girl {
+    position: absolute;
+    width: 66.96vw;
+    height: 91.53vw;
+    right: 0px;
+    top: 0px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 68.04%, rgba(0, 0, 0, 0.75) 79.64%);
+    mix-blend-mode: difference;
+    z-index: -2;
+}
+
+#ribbon {
+    position: absolute;
+    width: 100%;
+    height: 10.21vw;
+    left: 0vw;
+    top: 57.21vw;
+}
+
+@media screen and (max-width: 431px) {
+    #main-banner {
+        width: 100%;
+        height: 188.37vw;
+    }
+
+    #banner-title {
+        width: 88vw;
+        height: 20.93vw;
+        top: 139.53vw;
+        left: calc(50% - 44vw);
+        font-size: 8.40vw;
+        line-height: 10.47vw;
+        text-align: center;
+    }
+
+    #sub-title {
+        width: 88vw;
+        height: 2.79vw;
+        top: 164.88vw;
+        justify-content: center;
+        font-size: 3.72vw;
+        line-height: 10.47vw;
+        text-align: center;
+    }
+
+    #lets-play {
+        padding: 5.58vw 10.23vw;
+        gap: 0.13vw;
+        width: 77.91vw;
+        height: 13.95vw;
+        top: 171.86vw;
+        left: calc(50% - 77.91vw/2);
+        box-shadow: 0vw 1.86vw 2.72vw rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur(1.67vw);
+        border-radius: 0vw 3.58vw;
+        border: 0.13vw solid transparent;
+        font-size: 3.72vw;
+        line-height: 13.72vw;
+        letter-spacing: 0.002em;
+        color: #FFFFFF;
+        background: linear-gradient(#0c050c 0 0) padding-box, linear-gradient(116.02deg, #D90AFF 31.67%, rgba(217, 10, 255, 0.08) 100%) border-box;
+    }
+
+    #ribbon {
+        content: url(images/ribbon-mob.png);
+        height: 6.60vw;
+        top: 130.37vw;
+    }
+
+    #gaming-girl {
+        content: url(images/gaming-girl-mob.png);
+        width: 100%;
+        height: 182.56vw;
+        background: linear-gradient(179.74deg, rgba(0, 0, 0, 0) 75.65%, rgba(15, 9, 13, 0.75) 100.94%);
+    }
+}
+
+/* Styling of headings in categories and top gaming section */
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    padding: 0px;
+    gap: 1.94vw;
+    height: 3.09vw;
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.57vw;
+    line-height: 110.6%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#categories-heading {
+    width: 27.77vw;
+    left: calc(50% - 13.89vw);
+    top: 4.29vw;
+}
+
+#top-gaming-heading {
+    width: 53.01vw;
+    left: calc(50% - 26.51vw);
+    top: 4.29vw;
+}
+
+.star {
+    width: 3.09vw;
+    height: 3.09vw;
+}
+
+@media screen and (max-width: 431px) {
+    .heading {
+        font-size: 4.65vw;
+        text-align: center;
+        letter-spacing: 0.009em;
+        justify-content: center;
+        gap: 4.99vw;
+    }
+
+    #categories-heading {
+        width: 55.6vw;
+        height: 6vw;
+        left: calc(50% - 55.6vw/2);
+    }
+
+    #top-gaming-heading {
+        width: 66.6vw;
+        height: 12.09vw;
+        left: calc(50% - 66.6vw/2);
+    }
+
+    .star {
+        width: 7.75vw;
+        height: 7.75vw;
+    }
+}
+
+/* Styling of categories section */
+#categories {
+    position: absolute;
+    width: 100%;
+    height: 71.67vw;
+    left: 0;
+    top: 71.67vw;
+}
+
+#view-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.50vw 27.61vw;
+    gap: 0.07vw;
+    position: absolute;
+    width: 62.29vw;
+    height: 6.04vw;
+    left: calc(50% - 31.15vw);
+    top: 61.88vw;
+    backdrop-filter: blur(0.91vw);
+    border-radius: 0vw 1.94vw;
+    cursor: pointer;
+    background: linear-gradient(#350443 0 0) padding-box, linear-gradient(116.02deg, #D90AFF 31.67%, rgba(217, 10, 255, 0.08) 100%) border-box;
+    border: 0.1vw solid transparent;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.39vw;
+    line-height: 7.50vw;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+#slider {
+    position: absolute;
+    width: 73.65vw;
+    height: 47.48vw;
+    left: 13.38vw;
+    top: 11.61vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide {
+    position: absolute;
+    width: 23.92vw;
+    height: 35.63vw;
+    border-radius: 4.79vw;
+    top: 5.94vw;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide span {
+    position: absolute;
+    width: 13.92vw;
+    height: 1.67vw;
+    left: calc(50% - 13.92vw/2);
+    top: 33.05vw;
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.53vw;
+    line-height: 110.6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.subtract-left,
+.subtract-center,
+.subtract-right {
+    position: absolute;
+    width: 13.92vw;
+    height: 3.51vw;
+    left: 5vw;
+    top: 32.12vw;
+}
+
+.left-img,
+.center-img,
+.right-img {
+    position: absolute;
+    width: 22.96vw;
+    height: 33.51vw;
+    left: 0vw;
+    top: 0vw;
+    border-radius: 0.76vw;
+    border: 0.48vw solid #69B7FF;
+}
+
+@media screen and (max-width: 431px) {
+    #categories {
+        height: 98.14vw;
+        top: 188.37vw;
+    }
+
+    #view-all {
+        padding: 5.58vw 8.37vw;
+        gap: 0.09vw;
+        width: 77.91vw;
+        height: 13.95vw;
+        left: calc(50% - 77.91vw / 2);
+        top: 84.09vw;
+        box-shadow: 0vw 1.86vw 2.72vw rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur(1.12vw);
+        border-radius: 0vw 2.41vw;
+        border: 0.17vw solid transparent;
+        background: linear-gradient(#350443 0 0) padding-box, linear-gradient(116.02deg, #D90AFF 31.67%, rgba(217, 10, 255, 0.08) 100%) border-box;
+        font-size: 3.72vw;
+        line-height: 9.30vw;
+    }
+
+    #slider {
+        width: 100%;
+        height: 65.14vw;
+        left: 0;
+        top: 15.16vw;
+    }
+
+    .slide {
+        width: 34.11vw;
+        height: 48.84vw;
+        left: 7.62vw;
+        top: 8.14vw;
+        border-radius: 6.56vw;
+    }
+
+    .slide span {
+        width: 7.67vw;
+        height: 2.33vw;
+        left: calc(50% - 7.67vw/2);
+        top: 45.02vw;
+        font-size: 2.10vw;
+    }
+
+    .subtract-left,
+    .subtract-center,
+    .subtract-right {
+        width: 19.11vw;
+        height: 4.81vw;
+        left: 6.85vw;
+        top: 44.05vw;
+    }
+
+    .left-img,
+    .center-img,
+    .right-img {
+        width: 32.78vw;
+        height: 45.97vw;
+        left: 0;
+        top: 0;
+        border: 0.66vw solid #69B7FF;
+        border-radius: 1.05vw;
+    }
+}
+
+/* For animating the slides */
+.slide-left {
+    transform: translateX(0%) scale(1);
+    top: 5.94vw;
+    z-index: 2;
+}
+
+.slide-center {
+    transform: translateX(100%) scale(1.33);
+    top: 5.94vw;
+    z-index: 3;
+}
+
+.slide-right {
+    transform: translateX(200%) scale(1);
+    top: 5.94vw;
+    z-index: 2;
+}
+
+@media screen and (max-width: 431px) {
+    .slide-left {
+        transform: translateX(0%) scale(1);
+        top: 8.14vw;
+    }
+
+    .slide-center {
+        transform: translateX(70%) scale(1.33);
+        top: 8.14vw;
+    }
+
+    .slide-right {
+        transform: translateX(140%) scale(1);
+        top: 8.14vw;
+    }
+}
+
+/* Styling of explore section */
+#explore {
+    position: absolute;
+    width: 100%;
+    height: 50.56vw;
+    left: 0vw;
+    top: 143.27vw;
+}
+
+#rectangle {
+    position: absolute;
+    width: 87.22vw;
+    height: 39.03vw;
+    left: calc(50% - 43.61vw);
+    top: 5.71vw;
+    backdrop-filter: blur(0.84vw);
+    border-radius: 2.01vw;
+    background: linear-gradient(#350443 0 0) padding-box, linear-gradient(121.95deg, #E12CFF 1.78%, rgba(255, 39, 39, 0) 100%) border-box;
+    border: 0.21vw solid transparent;
+    opacity: 0.6;
+}
+
+#explore-title {
+    position: absolute;
+    width: 35.88vw;
+    height: 11.67vw;
+    left: calc(50% + 4.46vw);
+    top: 10.28vw;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.33vw;
+    line-height: 116.6%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#explore-details {
+    position: absolute;
+    width: 32.15vw;
+    height: 10.42vw;
+    top: 22.15vw;
+    left: calc(50% + 4.46vw);
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.11vw;
+    line-height: 185.1%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+#explore-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.04vw 4.86vw;
+    gap: 0.07vw;
+    position: absolute;
+    width: 16.18vw;
+    height: 4.38vw;
+    left: calc(50% + 4.46vw);
+    top: 34.17vw;
+    backdrop-filter: blur(0.91vw);
+    cursor: pointer;
+    background: linear-gradient(#350443 0 0) padding-box, linear-gradient(116.02deg, #D90AFF 31.67%, rgba(217, 10, 255, 0.08) 100%) border-box;
+    border: 0.1vw solid transparent;
+    border-radius: 0vw 1.94vw;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.39vw;
+    line-height: 7.5vw;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 431px) {
+    #explore {
+        height: 181.40vw;
+        top: 290.23vw;
+    }
+
+    #rectangle {
+        width: 92.33vw;
+        height: 168.37vw;
+        left: calc(50% - 92.33vw / 2);
+        top: 11.86vw;
+        backdrop-filter: blur(1.17vw);
+        border-radius: 2.80vw;
+        border: 0.29vw solid transparent;
+        background: linear-gradient(#350443 0 0) padding-box, linear-gradient(121.95deg, #E12CFF 1.78%, rgba(255, 39, 39, 0) 100%) border-box;
+        opacity: 0.6;
+    }
+
+    #explore-title {
+        width: 71.91vw;
+        height: 26.98vw;
+        top: 105.96vw;
+        left: calc(50% - 71.91vw/2);
+        font-size: 7.44vw;
+        text-align: center;
+    }
+
+    #explore-details {
+        top: 138.73vw;
+        width: 77.91vw;
+        height: 15.58vw;
+        left: calc(50% - 77.91vw/2);
+        font-size: 3.26vw;
+        line-height: 4.88vw;
+        text-align: center;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    #explore-btn {
+        padding: 5.58vw 8.37vw;
+        gap: 0.11vw;
+        width: 77.91vw;
+        height: 13.95vw;
+        top: 159.68vw;
+        left: calc(50% - 77.91vw/2);
+        box-shadow: 0px 1.86vw 2.72vw rgba(0, 0, 0, 0.37);
+        backdrop-filter: blur(1.46vw);
+        border-radius: 0px 3.13vw;
+        border: 0.11vw solid transparent;
+        background: linear-gradient(#3b1237 0 0) padding-box, linear-gradient(116.02deg, #D90AFF 31.67%, rgba(217, 10, 255, 0.08) 100%) border-box;
+        font-size: 3.72vw;
+        line-height: 12.09vw;
+    }
+}
+
+/* Styling of ninja animation components */
+#ninja-components {
+    position: absolute;
+    width: 47.23vw;
+    height: 49.38vw;
+    left: 3.39vw;
+    top: 0;
+}
+
+#character {
+    position: absolute;
+    width: 47.23vw;
+    height: 49.38vw;
+    left: 0;
+    top: 0;
+    filter: drop-shadow(0px 1.11vw 1.44vw rgba(0, 0, 0, 0.56));
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+#blade {
+    position: absolute;
+    width: 1.98vw;
+    height: 1.89vw;
+    top: 28.45vw;
+    left: 1.99vw;
+    opacity: 0;
+    transform: rotate(-171.97deg);
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+#knife1 {
+    position: absolute;
+    width: 12.66vw;
+    height: 3.31vw;
+    left: 11.81vw;
+    top: 15.77vw;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#knife2 {
+    position: absolute;
+    width: 9.35vw;
+    height: 4.77vw;
+    left: 14.73vw;
+    top: 18.65vw;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#knife3 {
+    position: absolute;
+    width: 5.66vw;
+    height: 7.61vw;
+    left: 14.88vw;
+    top: 20.35vw;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#knife4 {
+    position: absolute;
+    width: 12.66vw;
+    height: 3.31vw;
+    right: 11.81vw;
+    top: 15.77vw;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#knife5 {
+    position: absolute;
+    width: 9.35vw;
+    height: 4.77vw;
+    right: 14.73vw;
+    top: 18.65vw;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#knife6 {
+    position: absolute;
+    width: 5.66vw;
+    height: 7.61vw;
+    right: 14.88vw;
+    top: 20.35vw;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#ninja-components.active {
+    #blade {
+        opacity: 1;
+        transform: rotate(360deg);
+        width: 4.27vw;
+        height: 4.06vw;
+        left: 17.12vw;
+        top: 20.77vw;
+    }
+
+    #character {
+        transform: scale(1.1);
+    }
+
+    #knife1 {
+        width: 13.93vw;
+        height: 3.64vw;
+        left: 0vw;
+        top: 15.77vw;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    #knife2 {
+        width: 10.29vw;
+        height: 5.25vw;
+        left: 1.73vw;
+        top: 23.65vw;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    #knife3 {
+        width: 6.23vw;
+        height: 8.37vw;
+        left: 6.88vw;
+        top: 35.35vw;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    #knife4 {
+        width: 13.93vw;
+        height: 3.64vw;
+        right: 0vw;
+        top: 15.77vw;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    #knife5 {
+        width: 10.29vw;
+        height: 5.25vw;
+        right: 1.73vw;
+        top: 23.65vw;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    #knife6 {
+        width: 6.26vw;
+        height: 8.34vw;
+        right: 6.88vw;
+        top: 35.42vw;
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 431px) {
+    #ninja-components {
+        width: 100%;
+        height: 104.57vw;
+        left: 0;
+    }
+
+    #character {
+        width: 85%;
+        left: 7.5%;
+        height: 88.89vw;
+        filter: drop-shadow(0px 2.35vw 3.06vw rgba(0, 0, 0, 0.56));
+    }
+
+    #blade {
+        top: 60.45vw;
+    }
+
+    #knife1 {
+        left: 39.81vw;
+        top: 32.77vw;
+    }
+
+    #knife2 {
+        left: 42.73vw;
+        top: 33.65vw;
+    }
+
+    #knife3 {
+        left: 42.88vw;
+        top: 41.35vw;
+    }
+
+    #knife4 {
+        right: 39.81vw;
+        top: 32.77vw;
+    }
+
+    #knife5 {
+        right: 42.73vw;
+        top: 33.65vw;
+    }
+
+    #knife6 {
+        right: 42.88vw;
+        top: 41.35vw;
+    }
+
+
+    #ninja-components.active {
+        #character {
+            width: 90%;
+            left: 5%;
+            height: 94.11vw;
+        }
+
+        #blade {
+            position: absolute;
+            width: 7.48vw;
+            height: 6.8vw;
+            left: 38.12vw;
+            top: 40.49vw;
+        }
+
+        #knife1 {
+            width: 12.29vw;
+            height: 6.25vw;
+            width: 19vw;
+            height: 5vw;
+            left: 11vw;
+            top: 32.77vw;
+        }
+
+        #knife2 {
+            width: 12.29vw;
+            height: 6.25vw;
+            left: 11.73vw;
+            top: 50.65vw;
+        }
+
+        #knife3 {
+            width: 8.23vw;
+            height: 10.37vw;
+            left: 20.88vw;
+            top: 70.35vw;
+        }
+
+        #knife4 {
+            width: 19vw;
+            height: 5vw;
+            right: 11vw;
+            top: 32.77vw;
+        }
+
+        #knife5 {
+            width: 12.29vw;
+            height: 6.25vw;
+            right: 11.73vw;
+            top: 50.65vw;
+        }
+
+        #knife6 {
+            width: 8.23vw;
+            height: 10.37vw;
+            right: 20.88vw;
+            top: 70.35vw;
+        }
+    }
+}
+
+/* Styling of top-gaming section */
+#top-gaming {
+    position: absolute;
+    width: 100%;
+    height: 81.67vw;
+    left: 0vw;
+    top: 193.06vw;
+}
+
+#top-games {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0px;
+    gap: 1.94vw 2.78vw;
+    position: absolute;
+    width: 86.11vw;
+    height: 67.33vw;
+    left: calc(50% - 43.06vw);
+    top: 11.46vw;
+}
+
+.game-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.29vw 1.29vw 2.22vw;
+    gap: 1.11vw;
+    isolation: isolate;
+    width: 26.39vw;
+    height: 32.66vw;
+    background: rgba(32, 0, 35, 0.41);
+    backdrop-filter: blur(0.65vw);
+    border: 0.07vw solid #E5D5FF;
+    border-radius: 1.25vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.translucent-screen {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 0, 35, 0.41);
+    backdrop-filter: blur(0.65vw);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.game-card:hover .translucent-screen {
+    transform: translateY(0);
+}
+
+.play-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.04vw 7.15vw;
+    gap: 0.69vw;
+    position: absolute;
+    width: 18.12vw;
+    left: 4.17vw;
+    height: 0px;
+    top: 14.24vw;
+    background: linear-gradient(142.43deg, #FA00FF 19.51%, #8000FF 99.17%);
+    border: 0.21vw solid #FFFFFF;
+    border-radius: 0.69vw;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, height 0.3s ease;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.39vw;
+    line-height: 1.67vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.game-card:hover .play-button {
+    height: 4.17vw;
+    opacity: 1;
+}
+
+.game-preview {
+    box-sizing: border-box;
+    width: 22.22vw;
+    height: 17.64vw;
+    border: 0.06vw solid #FFFFFF;
+    border-radius: 2.64vw;
+    z-index: 0;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.69vw;
+    width: 23.82vw;
+    height: 9.17vw;
+    align-self: stretch;
+    z-index: 1;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0.32vw;
+    position: absolute;
+    width: 21.02vw;
+    height: 6.11vw;
+    left: calc(50% - 21.02vw/2);
+    align-self: stretch;
+}
+
+.name {
+    width: 21.02vw;
+    height: 2.36vw;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.90vw;
+    line-height: 2.36vw;
+    color: #FFFFFF;
+    align-self: stretch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.info {
+    width: 21.02vw;
+    height: 3.43vw;
+    align-self: stretch;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.03vw;
+    line-height: 1.67vw;
+    color: #F8F8F8;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    width: 11.81vw;
+    height: 2.36vw;
+    top: 6.81vw;
+    left: 1.39vw;
+}
+
+.rate-star {
+    width: 2.36vw;
+    height: 2.36vw;
+}
+
+@media screen and (max-width: 431px) {
+    #top-gaming {
+        height: 204.65vw;
+        top: 476.98vw;
+    }
+
+    #top-games {
+        gap: 6.51vw 4.36vw;
+        width: 92.09vw;
+        height: 167.04vw;
+        left: calc(50% - 92.09vw / 2);
+        top: 28.84vw;
+    }
+
+    .game-card {
+        padding: 2.02vw 2.02vw 3.49vw;
+        gap: 1.74vw;
+        width: 41.44vw;
+        height: 51.34vw;
+        background: rgba(32, 0, 35, 0.41);
+        backdrop-filter: blur(1.02vw);
+        border-radius: 1.96vw;
+        border: 0.11vw solid #E5D5FF;
+    }
+
+    .play-button {
+        left: calc(50% - 9.06vw);
+        top: 23vw;
+    }
+
+    .game-preview {
+        width: 34.90vw;
+        height: 27.70vw;
+        border: 0.10vw solid #FFFFFF;
+        border-radius: 4.14vw;
+    }
+
+    .game-info {
+        padding: 0px 2.18vw;
+        gap: 1.09vw;
+        width: 37.40vw;
+        height: 14.39vw;
+    }
+
+    .details {
+        gap: 0.50vw;
+        width: 33.03vw;
+        height: 9.60vw;
+        left: calc(50% - 33.03vw/2);
+    }
+
+    .name {
+        width: 33.03vw;
+        height: 3.72vw;
+        font-size: 2.98vw;
+        line-height: 3.72vw;
+    }
+
+    .info {
+        width: 33.03vw;
+        height: 5.37vw;
+        font-size: 1.62vw;
+        line-height: 2.56vw;
+    }
+
+    .rating {
+        width: 18.54vw;
+        height: 3.71vw;
+        top: 10.69vw;
+        left: 0vw;
+    }
+
+    .rate-star {
+        width: 3.71vw;
+        height: 3.71vw;
+    }
+}
+
+/* Styling of feedback section */
+#feedback {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 1.81vw;
+    position: absolute;
+    width: 85.94vw;
+    height: 29.94vw;
+    left: calc(50% - 43.23vw);
+    top: 280.9vw;
+}
+
+.feed-box {
+    width: 42.15vw;
+    height: 29.93vw;
+}
+
+.feed-dec {
+    position: relative;
+    width: 6.96vw;
+    height: 5.45vw;
+    left: 32.22vw;
+    top: 0px;
+}
+
+.feed-rectangle {
+    box-sizing: border-box;
+    position: relative;
+    width: 42.15vw;
+    height: 26.94vw;
+    left: 0vw;
+    top: -2.99vw;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.084) 0%, rgba(217, 217, 217, 0.042) 100%);
+    backdrop-filter: blur(1.74vw);
+    border-radius: 0.69vw;
+    border: 0.07vw solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0vw 0.28vw 1.39vw -0.07vw rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.reviewer {
+    position: absolute;
+    width: 4.29vw;
+    height: 4.29vw;
+    left: 3.54vw;
+    top: 20.35vw;
+}
+
+.feed-name {
+    position: absolute;
+    width: 9.86vw;
+    height: 1.60vw;
+    left: 8.63vw;
+    top: 20.67vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.46vw;
+    line-height: 110.6%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.feed-company {
+    position: absolute;
+    width: 4.51vw;
+    height: 0.90vw;
+    left: 8.63vw;
+    top: 22.92vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.81vw;
+    line-height: 110.6%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.feed-star {
+    position: absolute;
+    width: 8.94vw;
+    height: 1.74vw;
+    left: 3.26vw;
+    top: 4.72vw;
+}
+
+.feed-review {
+    position: absolute;
+    width: 36.39vw;
+    height: 10.42vw;
+    left: 3.26vw;
+    top: 6.94vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.11vw;
+    line-height: 185.1%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 431px) {
+    #feedback {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3.70vw;
+        width: 86.05vw;
+        height: 126.28vw;
+        left: calc(50% - 86.05vw / 2);
+        top: 694.88vw;
+    }
+
+    .feed-box {
+        width: 86.31vw;
+        height: 61.29vw;
+    }
+
+    .feed-dec {
+        width: 14.26vw;
+        height: 11.17vw;
+        left: 65.98vw;
+        z-index: 1;
+    }
+
+    .feed-rectangle {
+        width: 86.31vw;
+        height: 55.18vw;
+        top: -6.05vw;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.084) 0%, rgba(217, 217, 217, 0.042) 100%);
+        backdrop-filter: blur(3.55vw);
+        border-radius: 1.42vw;
+        border: 0.61px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 2.45px 12.23px -0.61px rgba(0, 0, 0, 0);
+        z-index: 0;
+    }
+
+    .reviewer {
+        width: 8.78vw;
+        height: 8.78vw;
+        left: 7.25vw;
+        top: 41.73vw;
+    }
+
+    .feed-name {
+        width: 20vw;
+        height: 3.26vw;
+        left: 17.69vw;
+        top: 42.39vw;
+        font-size: 2.98vw;
+    }
+
+    .feed-company {
+        width: 9.30vw;
+        height: 1.86vw;
+        left: 17.69vw;
+        top: 47.03vw;
+        font-size: 1.66vw;
+    }
+
+    .feed-star {
+        width: 18.32vw;
+        height: 3.55vw;
+        left: 5.68vw;
+        top: 8.32vw;
+    }
+
+    .feed-review {
+        width: 74.71vw;
+        height: 20.93vw;
+        left: calc(50% - 74.71vw / 2);
+        top: 12.61vw;
+        font-size: 2.28vw;
+    }
+}
+
+/* Styling of footer section */
+footer {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 29.02vw;
+    left: 0vw;
+    top: 316.67vw;
+    background-image: url(images/footer.png);
+    border-top: 0.07vw solid #D251FF;
+}
+
+#foot-logo {
+    position: absolute;
+    width: 9.65vw;
+    height: 2.43vw;
+    left: 6.94vw;
+    top: 5.21vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.22vw;
+    line-height: 110.6%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#copyright {
+    position: absolute;
+    width: 24.17vw;
+    height: 1.67vw;
+    left: 19.86vw;
+    top: 24.58vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.97vw;
+    line-height: 173.6%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.065em;
+    color: #FFFFFF;
+}
+
+#social {
+    position: absolute;
+    width: 7.50vw;
+    height: 1.94vw;
+    left: 7.56vw;
+    top: 24.58vw;
+}
+
+#foot-line {
+    position: absolute;
+    width: 21.81vw;
+    height: 8.33vw;
+    left: 6.94vw;
+    top: 10.35vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.11vw;
+    line-height: 185.1%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+#foot-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 1.81vw;
+    position: absolute;
+    width: 18.75vw;
+    height: 12.92vw;
+    left: 34.03vw;
+    top: 5.21vw;
+}
+
+.category-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2.78vw;
+    width: 7.02vw;
+    height: 1.39vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.25vw;
+    line-height: 110.6%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.foot-categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 2.78vw 7.50vw;
+    width: 18.75vw;
+    height: 9.72vw;
+    margin: 0;
+    align-self: stretch;
+
+    li {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.25vw;
+        line-height: 110.6%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+}
+
+#foot-help {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 6.59vw;
+    height: 12.92vw;
+    left: 58.06vw;
+    top: 5.21vw;
+    position: absolute;
+    gap: 1.81vw;
+}
+
+#mob-foot {
+    display: none;
+}
+
+@media screen and (max-width: 431px) {
+    footer {
+        height: 30.70vw;
+        top: 830.60vw;
+        background: rgba(0, 0, 0, 0.27);
+        border-top: 0.23vw solid #D251FF;
+    }
+
+    #foot-logo {
+        display: none;
+    }
+
+    #copyright {
+        width: 81.35vw;
+        height: 5.58vw;
+        left: calc(50% - 81.35vw / 2);
+        top: 23.49vw;
+        font-size: 3.26vw;
+        display: flex;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.69);
+    }
+
+    #social {
+        width: 18.60vw;
+        height: 5.12vw;
+        left: 37.09vw;
+        top: 13.95vw;
+    }
+
+    #foot-line {
+        display: none;
+    }
+
+    #foot-category {
+        display: none;
+    }
+
+    .category-heading {
+        display: none;
+    }
+
+    .foot-categories {
+        display: none;
+    }
+
+    #foot-help {
+        display: none;
+    }
+
+    #mob-foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        gap: 6.05vw;
+        position: absolute;
+        width: 92.79vw;
+        height: 4.19vw;
+        top: 3.72vw;
+        left: calc(50% - 92.79vw/2);
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.26vw;
+        line-height: 110.6%;
+        letter-spacing: 0.04em;
+        color: rgba(255, 255, 255, 0.69);
+        list-style-type: none;
+    }
+}
